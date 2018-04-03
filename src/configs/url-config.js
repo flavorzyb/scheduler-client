@@ -23,6 +23,18 @@ class UrlConfig {
     get userServerHost() {
         return process.env.USER_SERVER_HOST;
     }
+
+    /**
+     *  get schedule server login url
+     * @return {string}
+     */
+    get scheduleServerLoginUrl() {
+        return this.scheduleServerHost + '/wifi/login';
+    }
+
+    get scheduleServerFetchListUrl () {
+        return this.scheduleServerHost + '/wifi/login';
+    }
 }
 
 const config = new UrlConfig();
