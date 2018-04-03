@@ -1,0 +1,6 @@
+{
+    "scheduler-server": {
+        "loginUrl": "",
+        "fetchListUrl": ""
+    }
+}
