@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+const AppConfig = require('../app-config')
+const config = new AppConfig();
+config.start();
