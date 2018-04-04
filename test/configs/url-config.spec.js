@@ -11,4 +11,9 @@ describe('UrlConfig Class Test Case', () => {
         assert.equal('http://www.schedule.com', UrlConfig.scheduleServerHost);
         assert.equal('http://www.user.com', UrlConfig.userServerHost);
     });
+
+    it('test url', () => {
+        assert.equal('http://www.schedule.com/wifi/login', UrlConfig.scheduleServerLoginUrl);
+        assert.equal('http://www.schedule.com/wifi/api/wifi', UrlConfig.scheduleServerFetchListUrl);
+    });
 });

@@ -20,7 +20,8 @@
         "dotenv": "5.0.1",
         "log4js": "2.5.3",
         "request": "2.85.0",
-        "request-promise": "4.2.2"
+        "request-promise": "4.2.2",
+        "tough-cookie": "2.3.4"
     },
     "engines": {
         "node": ">= 4.0.0"

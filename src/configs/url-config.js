@@ -1,10 +1,6 @@
 'use strict';
 
-const env = require('dotenv').config({encoding:'utf8'});
-
-if (env.error) {
-    throw env.error;
-}
+require('dotenv').config({encoding:'utf8'});
 
 class UrlConfig {
     /**
@@ -32,8 +28,12 @@ class UrlConfig {
         return this.scheduleServerHost + '/wifi/login';
     }
 
+    /**
+     * get fetch scheduler list url
+     * @return {string}
+     */
     get scheduleServerFetchListUrl () {
-        return this.scheduleServerHost + '/wifi/login';
+        return this.scheduleServerHost + '/wifi/api/wifi';
     }
 }
 
