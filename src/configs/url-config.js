@@ -35,6 +35,10 @@ class UrlConfig {
     get scheduleServerFetchListUrl () {
         return this.scheduleServerHost + '/wifi/api/wifi';
     }
+
+    get userServiceListApiUrl() {
+        return this.userServerHost + '/api/scheduler';
+    }
 }
 
 const config = new UrlConfig();
